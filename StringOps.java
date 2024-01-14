@@ -34,6 +34,8 @@ public class StringOps {
                 asciiuppercase = (int) string.charAt(i) - 32;
                 char uppercase = (char) asciiuppercase;
                 newString = newString + uppercase;
+            } else if ((int)string.charAt(i) == 'A' || (int)string.charAt(i) == 'E' || (int)string.charAt(i) == 'I' || (int)string.charAt(i) == 'O' || (int)string.charAt(i) == 'U') {
+                newString = newString + string.charAt(i);
             } else if ((int)string.charAt(i) >= 65 && (int)string.charAt(i) <= 90 ) {
                 int asciilowercase = (int)string.charAt(i);
                 asciilowercase = (int)string.charAt(i) + 32;
