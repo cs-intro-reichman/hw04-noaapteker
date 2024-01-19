@@ -53,7 +53,7 @@ public class ArrayOps {
         while (array[firstDifferent] == array[firstDifferent+1]) {
             firstDifferent++;
         }
-        boolean ole;
+        boolean ole;// what is ole? not meaningful name
         if (array[firstDifferent+1] > array[firstDifferent]) {
             ole = true;
         } else {
