@@ -29,6 +29,10 @@ public class StringOps {
     public static String capVowelsLowRest (String string) {
         String newString = "";
         for (int i = 0; i < string.length(); i++) {
+            /* 
+  		why didn't you create a helper isVowel()?
+		could be a lot cleaner
+  		*/
             if (string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u' ) {
                 int asciiuppercase = (int) string.charAt(i);
                 asciiuppercase = (int) string.charAt(i) - 32;
@@ -36,6 +40,12 @@ public class StringOps {
                 newString = newString + uppercase;
             } else if ((int)string.charAt(i) == 'A' || (int)string.charAt(i) == 'E' || (int)string.charAt(i) == 'I' || (int)string.charAt(i) == 'O' || (int)string.charAt(i) == 'U') {
                 newString = newString + string.charAt(i);
+
+                
+/* 
+	  		why didn't you create a helper isLetter()?
+			could be a lot more readable.
+	  		*/
             } else if ((int)string.charAt(i) >= 65 && (int)string.charAt(i) <= 90 ) {
                 int asciilowercase = (int)string.charAt(i);
                 asciilowercase = (int)string.charAt(i) + 32;
